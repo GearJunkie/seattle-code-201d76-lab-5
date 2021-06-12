@@ -90,7 +90,6 @@ let string =2 + "," + 3 + "," + 4 + " was passed in as an array of numbers, and 
 return [arraySum2, string];
 };
 
-console.log(sumArray);
 // Here is the test for sumArray(); uncomment it to run it
 
 // testSumArray(testArray);
@@ -109,8 +108,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+  let arrayMult = multiply(2, 3)[0];
+  let arrayMult2 = multiply(arrayMult, 4)[0]
 
-}
+  let string = "The numbers " + 2 + "," + 3 + "," + 4 + " have a product of " + arrayMult2 + "."
+  return [arrayMult2, string];
+};
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
